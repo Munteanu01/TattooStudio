@@ -1,0 +1,301 @@
+/*UNIVERSAL*/
+*{  
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:Sorts Mill Goudy;
+}
+body{
+	background-color: #1A1A1A;
+	min-height: 100vh;
+	letter-spacing: 0.12em;
+}
+p, h1, h2, h3,li {
+	color:#e4e4e4;
+}
+h2{
+	font-size:1.6rem ;
+}
+h3{
+	font-size:1.4rem ;
+}
+p, li{
+	font-size: 1.3rem;
+}
+/*SCROLLBAR*/
+html::-webkit-scrollbar{
+	width: 0.5vw;
+}
+html::-webkit-scrollbar-thumb{
+	background-color:#9A834A;	
+}
+html::-webkit-scrollbar-track{
+	background-color: #1A1A1A;
+}
+/*NAVBAR*/
+nav {
+	display: flex;
+	background-color: #1A1A1A;
+	align-items: center;
+	justify-content: space-between;
+	position: sticky;
+    top: 0;
+	height: 80px;
+}
+nav a{
+	font-family: Bree Serif;
+	font-size: 1.2rem;
+}
+.logo{
+	width: 75px;
+	margin: 11px 100px 5px 100px;
+}
+.decoration-left{
+	width: 69px;
+	margin: 5px 40px 5px 70px;
+}
+.decoration-right{
+	width: 69px;
+	margin: 5px 70px 5px 40px;
+}
+.menu {
+	text-decoration: none;
+	color: #e4e4e4;
+}
+.menu:after {    
+	bottom: 0;
+	content: "";
+	display: block;
+	height: 2px;
+	left: 50%;
+	position:relative;
+	background: #9A834A;
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	width: 0;
+}
+.menu:hover:after { 
+	width: 100%; 
+	left: 0; 
+}
+/*INTRO*/
+#intro{
+	text-align: center;
+}
+#intro h1{
+	margin:70px 2px 50px 0;
+	display: flex;
+	justify-content: center;
+	text-decoration: underline #9A834A 3px;
+	font-size: 1.8rem;
+}
+#intro p{
+	margin:0 100px 50px 100px;
+}
+/*STORY*/
+#story h2{
+	text-align: center;
+	margin: 40px 0 30px 10px;
+}
+#story h3{
+	text-align: center;
+	margin-bottom: 30px;
+}
+#story img{
+	display: block;
+	margin: auto;
+	padding-left: 9px;
+	padding-bottom: 50px;
+	width: 200px;
+}
+/*SERVICES*/
+#services h2{
+	margin-left: 2px;
+	text-align: center;
+}
+#services h3{
+	margin: 30px;
+	text-align: center;
+}
+.gallery {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+}
+.photo{
+	max-width: 230px;
+	margin: 4px 5px 4px 5px;	
+}
+/*TEAM*/
+#team {
+	text-align: center;
+}
+#team h2{
+	margin: 40px 0 15px 16px;
+}
+#team img{
+	display: inline;
+	width: 200px;
+	margin: 15px 50px 25px 50px;
+}
+/*CONTACT*/
+#contact{
+	text-align: center;
+}
+#contact h3{
+	margin:20px 0 40px 0 ;
+}
+#contact img{
+	width: 300px;
+	margin-left: 8px;
+}
+#container{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+.left{
+	width: 400px;
+	margin-right: 60px;
+}
+.right{
+	width: 400px;
+	margin-left: 60px;
+}
+.div-icons{
+	display: flex;
+	justify-content: center;
+}
+#icon1, #icon2, #icon3{
+	margin: 70px 10px 20px 10px;
+	color: #e4e4e4;
+}
+/*MEDIA*/
+@media (max-width:1200px){
+	/*NAVBAR*/
+	.logo{
+		width: 70px;
+		margin: 5px 80px 0 80px;
+	}
+	.decoration-left{
+		width: 60px;
+		margin: 5px 30px 5px 60px;
+	}
+	.decoration-right{
+		width: 60px;
+		margin: 5px 60px 5px 30px;
+	}
+	/*SERVICES*/
+	.photo{
+		width: 210px;
+	}
+}
+@media (max-width:900px){
+	/*NAVBAR*/
+	.menu{
+		display: none;
+	}
+	.logo{
+		width: 60px;
+		margin: 10px 0px 0px 0px;
+	}
+	.decoration-left{
+		width: 50px;
+		margin: 5px 20px 5px 50px;
+	}
+	.decoration-right{
+		width: 50px;
+		margin: 5px 50px 5px 20px;
+	}
+	/*INTRO*/
+    #intro h1{
+		margin:40px 0 30px 0;
+		font-size: 1.5rem;
+	}
+	#intro p{
+		margin:0 55px 0px 55px;
+	}
+	/*SERVICES*/
+	.photo{
+		width: 190px;
+	}
+	/*TEAM*/
+	#team img{
+		width: 150px;
+		margin: 15px 30px 25px 30px;
+	}
+	/*CONTACT*/
+	#contact img{
+		width: 170px;
+	}	
+	.left{
+		margin:0 20px 0 25px;
+	}
+	.right{
+		margin:0 25px 0 20px;
+	}
+	/*UNIVERSAL*/
+	h2{
+        font-size: 1.4rem;
+	}
+	h3{
+        font-size: 1.2rem;
+	}
+	p,li{
+		font-size: 1.1rem;
+	}
+}
+@media(max-width:600px){
+	/*NAVBAR*/
+	.menu{
+		display: none;
+	}
+	.logo{
+		width: 50px;
+		margin: 0;
+	}
+	.decoration-left{
+		width: 40px;
+		margin: 5px 5px 5px 10px;
+	}
+	.decoration-right{
+		width: 40px;
+		margin: 5px 10px 5px 5px;
+	}
+	/*INTRO*/
+    #intro h1{
+		margin:25px 0 20px 0;
+		font-size: 1.2rem;
+	}
+	#intro p{
+		margin:0 10px 0px 10px;
+	}
+	/*STORY*/
+	#story img{
+		width: 125px;
+	}
+	/*SERVICES*/
+	.photo{
+		width: 150px;
+	}
+	/*CONTACT*/
+	#container{
+		flex-wrap: wrap;
+		margin-bottom: 15px;
+	}
+	#icon1, #icon2, #icon3{
+		margin: 30px 10px 20px 10px;
+	}
+	/*UNIVERSAL*/
+	h2{
+        font-size: 1.2rem;
+	}
+	h3{
+        font-size: 1rem;
+	}
+	p, li{
+		font-size: 1rem;
+	}
+	span{
+		font-size: 0.6rem;
+	}
+}
